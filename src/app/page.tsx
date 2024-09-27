@@ -8,11 +8,11 @@ import Testimonials from '../components/Testimonials'
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Head>
+     
         <title>Micro SaaS Tools - Boost Your Productivity</title>
         <meta name="description" content="Access a suite of powerful, easy-to-use tools to simplify your daily tasks." />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+
 
       <Header />
 

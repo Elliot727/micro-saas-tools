@@ -22,7 +22,7 @@ export default function Hero() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="#testimonials">
+                <Link href="#testimonials" className='text-black'>
                   See Testimonials
                 </Link>
               </Button>

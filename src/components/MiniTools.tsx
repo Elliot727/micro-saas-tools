@@ -7,37 +7,37 @@ export default function MiniTools() {
       title: "Internet Speed Test",
       description: "Check your download and upload speeds quickly.",
       icon: Zap,
-      link: "/tools/speed-test",
+      link: "/speed-test",
     },
     {
       title: "Unit Converter",
       description: "Convert between various units of measurement.",
       icon: Ruler,
-      link: "/tools/unit-converter",
+      link: "/unit-converter",
     },
     {
       title: "Download Time Calculator",
       description: "Estimate download times based on file size and speed.",
       icon: Clock,
-      link: "/tools/download-calculator",
+      link: "/download-calculator",
     },
     {
       title: "BMI Calculator",
       description: "Calculate your Body Mass Index easily.",
       icon: Activity,
-      link: "/tools/bmi-calculator",
+      link: "/bmi-calculator",
     },
     {
       title: "Time Zone Converter",
       description: "Convert times between different time zones.",
       icon: Globe,
-      link: "/tools/timezone-converter",
+      link: "/timezone-converter",
     },
     {
       title: "Color Converter",
       description: "Convert between different color formats.",
       icon: Palette,
-      link: "/tools/color-converter",
+      link: "/color-converter",
     },
   ]
 
