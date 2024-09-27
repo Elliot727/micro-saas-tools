@@ -1,13 +1,12 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Card, CardContent } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Palette, X } from 'lucide-react'
+import { ArrowLeft, Palette } from 'lucide-react'
 import Link from 'next/link'
 import '../app/globals.css'; // Your global styles
 
@@ -31,7 +30,8 @@ function rgbToHsl(r: number, g: number, b: number) {
   g /= 255
   b /= 255
   const max = Math.max(r, g, b), min = Math.min(r, g, b)
-  let h, s, l = (max + min) / 2
+  let h = 0, s = (max + min) / 2
+  const l = (max + min) / 2
 
   if (max === min) {
     h = s = 0
@@ -43,10 +43,10 @@ function rgbToHsl(r: number, g: number, b: number) {
       case g: h = (b - r) / d + 2; break
       case b: h = (r - g) / d + 4; break
     }
-    // h /= 6
+    h /= 6
   }
 
-  return { h: Math.round(0 * 360), s: Math.round(s * 100), l: Math.round(l * 100) }
+  return { h: Math.round(h * 360), s: Math.round(s * 100), l: Math.round(l * 100) }
 }
 
 function hslToRgb(h: number, s: number, l: number) {

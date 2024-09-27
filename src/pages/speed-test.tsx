@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
-import { ArrowLeft, Wifi, Download, Upload, Activity, Zap } from 'lucide-react'
+import { ArrowLeft, Wifi, Download, Upload, Activity } from 'lucide-react'
 import Link from 'next/link'
 import '../app/globals.css'; // Your global styles
 

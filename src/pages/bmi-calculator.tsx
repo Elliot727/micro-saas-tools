@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Activity, X } from 'lucide-react'
+import { ArrowLeft, Activity} from 'lucide-react'
 import Link from 'next/link'
 import '../app/globals.css'; // Your global styles
 const heightUnits = ['cm', 'inches']
@@ -25,10 +25,10 @@ export default function BMICalculator() {
   const handleCalculate = () => {
     setIsCalculating(true)
     setTimeout(() => {
-      let heightInMeters = parseFloat(height) / (heightUnit === 'cm' ? 100 : 39.37)
-      let weightInKg = parseFloat(weight) * (weightUnit === 'kg' ? 1 : 0.453592)
+      const heightInMeters = parseFloat(height) / (heightUnit === 'cm' ? 100 : 39.37)
+      const weightInKg = parseFloat(weight) * (weightUnit === 'kg' ? 1 : 0.453592)
       
-      let bmiValue = weightInKg / (heightInMeters * heightInMeters)
+      const bmiValue = weightInKg / (heightInMeters * heightInMeters)
       let category = ''
 
       if (bmiValue < 18.5) category = 'Underweight'

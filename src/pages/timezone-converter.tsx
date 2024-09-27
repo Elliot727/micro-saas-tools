@@ -1,13 +1,12 @@
 "use client"
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Card, CardContent } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Globe, X, ArrowRightLeft } from 'lucide-react'
+import { ArrowLeft, Globe, ArrowRightLeft } from 'lucide-react'
 import Link from 'next/link'
 import '../app/globals.css'; // Your global styles
 
@@ -34,6 +33,7 @@ export default function TimezoneConverter() {
     setIsConverting(true)
     setTimeout(() => {
       const dateTime = `${fromDate}T${fromTime}`
+      console.log(dateTime)
     //   const utcDate = zonedTimeToUtc(dateTime, fromTimezone)
     //   const convertedDate = utcToZonedTime(utcDate, toTimezone)
     //   setConvertedTime(format(convertedDate, 'yyyy-MM-dd HH:mm:ss zzz'))
